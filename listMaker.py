@@ -10,9 +10,8 @@ def mlist_norec(n):
         """
     assert isinstance(n, int), "L'entrée doit être un entier"
     assert n >= 0, "L'entrée doit être un entier non négatif"
-    list(range(n, -1, -1))
+    return list(range(n, -1, -1))
 
-print(mlist_norec(256))
 
 def mlist(n):
     """

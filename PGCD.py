@@ -1,4 +1,4 @@
-def pgcd(a, b):
+def pgcd(a:int, b:int)->int:
     assert isinstance(a, int) and isinstance(b, int), "a et b doivent être des entiers"
     if b == 0:
         return a
@@ -9,7 +9,7 @@ def pgcd(a, b):
 assert pgcd(256,56)==8
 assert pgcd(308,758)==2
 
-def simplifier(a,b):
+def simplifier(a:int,b:int)->tuple:
     diviser = pgcd(a,b)
     c = a/diviser
     d = b/diviser

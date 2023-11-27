@@ -1,4 +1,4 @@
-from math import sqrt, sin
+from math import sqrt
 from PIL import Image
 
 MAX_ITER = 50
@@ -18,7 +18,7 @@ def appartientAEnsembleMandelbrot(c):
     return True
 
 # CORPS DE PROGRAMME
-LARG, HAUT = (6000, 6000)
+LARG, HAUT = (100000, 100000)
 MIN_X, MAX_X = -2, 2
 MIN_Y, MAX_Y = -2, 2
 
